@@ -62,7 +62,7 @@ func createApiURL(c Config) string {
 	}
 
 	if c.URLBase != "" {
-		u.Path = fmt.Sprintf("%s/api", c.URLBase)
+		u.Path = fmt.Sprintf("%s/api/v3", c.URLBase)
 	} else {
 		u.Path = "/api/v3"
 	}
